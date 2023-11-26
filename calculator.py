@@ -1,19 +1,19 @@
 operations = ["+", "-", "*", "/"]
-operation = str(input("What operation do you want to do? The available operation are:\n+ for add\n- for substract\n* for multiply\n/ for divide\nEnter the operation you want to do here: "))
+operation = str(input("What operation do you want to do? The available operation are:\n+ for add\n- for subtract\n* for multiply\n/ for divide\nEnter the operation you want to do here: "))
 
 def add():
     sum = a + b
 
-    print(f"The result is {sum}")
+    print(f"The result is: {sum}")
 
-def substract():
+def subtract():
     difference = a - b
 
-    print(f"The result is {difference}")
+    print(f"The result is: {difference}")
 
 def multiply():
     product = a * b
-    print(f"The result is {product}")
+    print(f"The result is: {product}")
 
 def divide():
     dividednumber = a / b
@@ -33,7 +33,7 @@ if operation in operations:
             if operation == "+":
                 add()
             elif operation == "-":
-                substract()
+                subtract()
             elif operation == "*":
                 multiply()
             elif operation == "/":
